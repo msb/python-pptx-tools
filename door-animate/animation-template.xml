@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<p:par xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+	<p:cTn id="0" presetID="1" presetClass="" presetSubtype="0" fill="hold" nodeType="withEffect">
+		<p:stCondLst>
+			<p:cond thisDelay="" delay="0"/>
+		</p:stCondLst>
+		<p:childTnLst>
+			<p:set>
+				<p:cBhvr>
+					<p:cTn id="0" dur="1" fill="hold">
+						<p:stCondLst>
+							<p:cond delay="0"/>
+						</p:stCondLst>
+					</p:cTn>
+					<p:tgtEl>
+						<p:spTgt spid=""/>
+					</p:tgtEl>
+					<p:attrNameLst>
+						<p:attrName>style.visibility</p:attrName>
+					</p:attrNameLst>
+				</p:cBhvr>
+				<p:to>
+					<p:strVal val=""/>
+				</p:to>
+			</p:set>
+		</p:childTnLst>
+	</p:cTn>
+</p:par>
