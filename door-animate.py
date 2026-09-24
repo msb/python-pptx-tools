@@ -50,12 +50,11 @@ def main(door_image_path, frames, frame_time, initial_delay=0) -> int:
     # Source points (corners of the original image)
     pts_src = np.float32([[0, 0], [w, 0], [w, h], [0, h]])
 
-    # not sure what to call this, but it's the proportion that the width of the door is narrowed to
-    # when it has fully "swung in". 
-    focal_point_factor = 0.1
+    # Apparent door width when fully swung in, relative to its original width.
+    fully_open_width_ratio = 0.1
 
     start_top_corner_position = (w, 0) 
-    final_top_corner_position = (w * focal_point_factor, h * focal_point_factor)
+    final_top_corner_position = (w * fully_open_width_ratio, h * fully_open_width_ratio)
 
     for f in range(0, frames):
         ratio = f * np.pi / (frames - 1) / 2
